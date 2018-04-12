@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+body {
+  font-family: 'Questrial', sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding: 20px;
+  color: rgba(255,255,255,0.9);
+}
+
+.navbar .navbar-left li a {
+  color: rgba(255,255,255,0.9);
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.navbar .navbar-left li a:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.navbar .navbar-right li a {
+  color: rgba(255,255,255,0.9);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: rgba(255,255,255,0.9);
+  transition: width 0.3s;
+}
+
+.cool-link:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.player-photo {
+  height: 250px;
+  background-size: cover;
+}
+
+.banner {
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.8) 0%, rgba(0,36,61,0.7) 50%), url('../images/stadium.jpg');
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  height: 70vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(255,255,255,0.9);
+  align-items: center;
+}
+
+.banner, h1 {
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.players-section {
+  padding: 50px;
+}
+
+.player-card {
+  height: 450px;
+  padding: 15px;
+  margin: 20px 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.player-name {
+  display: block;
+  background-color: #dfca70;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  margin: 10px -30px;
+  box-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+  font-size: 16px;
+}
+
+.player-num {
+  font-size: 50px;
+  color: #dfca70;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
