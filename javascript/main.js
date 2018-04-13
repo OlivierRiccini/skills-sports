@@ -234,21 +234,21 @@ $('.players-section').slick({
   dots: true,
   responsive: [
     {
-      breakpoint: 1000,
+      breakpoint: 1300,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 900,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
       }
     },
     {
-      breakpoint: 500,
+      breakpoint: 630,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -260,76 +260,45 @@ $('.players-section').slick({
 
 const dots = document.querySelectorAll('.slick-dots li button');
 
+
 dots.forEach(function(dot) {
   dot.innerHTML = '<i class="fa fa-dot-circle-o" aria-hidden="true"></i>';
 });
 
-// /* Implement Slick function */
-// $('.slider').slick({
-//   arrows: false,
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   infinite: true,
-//   speed: 1000,
-//   responsive: [
-//     {
-//       breakpoint: 1000,
-//       settings: {
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//         infinite: true,
-//         speed: 1000
-//       }
-//     },
-//     {
-//       breakpoint: 600,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 1,
-//         infinite: true
-//       }
-//     }
-//   ]
-// });
+const whatWeDo = document.querySelector('.what-we-do');
+const navBar = document.querySelector('.navbar');
+const customdropdown = document.getElementById('icon-dropdown');
+const navItem = document.querySelectorAll('.navbar li a');
 
-// /* Apply style to side images*/
-// function sideImages() {
-//   const active = document.querySelectorAll('.slick-active');
-//   const makeClickable = document.querySelectorAll('.slick-active .item-carousel');
-//   makeClickable[0].insertAdjacentHTML('afterbegin', `<div class="clickable leftClickable"></div>`);
-//   makeClickable[makeClickable.length - 1].insertAdjacentHTML('afterbegin', `<div class="clickable rightClickable"></div>`);
+function navPosition() {
+  var rect = whatWeDo.getBoundingClientRect();
+  console.log(rect.top);
+  if ( rect.top < 140 ) {
+    navBar.style.backgroundColor = `rgba(255,255,255,0.95)`;
+    customdropdown.style.color = `#0a4e80`;
+    navItem.forEach(function(a) {
+      a.style.color = `#0a4e80`;
+    });
+  }
+  if ( rect.top > 140 ) {
+    navBar.style.backgroundColor = `transparent`;
+    navItem.forEach(function(a) {
+      a.style.color = `rgba(255,255,255,0.9)`;
+    });
+  }
+  /* For dropdown menu */
+  if ( rect.top < 110 ) {
+    customdropdown.style.color = `#0a4e80`;
+  }
+  if ( rect.top > 110 ) {
+    customdropdown.style.color = `rgba(255,255,255,0.9)`;
+  }
+}
 
-//   active.forEach(function(card) {
-//     if( card == active[active.length - 1] || card == active[0] ) {
-//       card.style.transition = 'all 1s';
-//       card.style.opacity = '0.2';
-//       card.querySelector('.item-carousel').style.margin = '0 auto';
-//       card.style.paddingTop = '10px'; // modified
-//       card.style.paddingBottom = '10px'; // modified
+window.addEventListener("scroll", navPosition);
 
-//     } else {
-//       card.style.opacity = '1';
-//       card.querySelector('.item-carousel').style.margin = '0';
-//       card.style.paddingTop = '0';
-//     }
-//   });
-
-//   $('.leftClickable').click(function(){
-//       $('.slider').slick('slickPrev');
-//       $('div').remove('.clickable');
-//       sideImages();
-//     })
-
-//   $('.rightClickable').click(function(){
-//       $('.slider').slick('slickNext');
-//       $('div').remove('.clickable');
-//       sideImages();
-//   })
-// }
-
-// sideImages();
-
-
-
+$('#icon-dropdown').click(function(){
+    $('#list-dropdown').slideToggle();
+});
 
 

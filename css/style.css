@@ -2,6 +2,22 @@
 
 body {
   font-family: 'Questrial', sans-serif;
+  color: rgba(0,0,0,0.6);
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  margin-top: 0;
+  color: #000;
+}
+
+.container {
+  background-color: rgba(200,200,200,0.1);
+  padding: 10px;
+  margin-top: 30px;
 }
 
 .navbar {
@@ -11,6 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   z-index: 9;
+  transition: all 1s;
 }
 
 .navbar ul {
@@ -21,10 +38,10 @@ body {
 .navbar ul li {
   display: inline-block;
   padding: 20px;
-  color: rgba(255,255,255,0.9);
 }
 
 .navbar .navbar-left li a {
+  transition: all 1s;
   color: rgba(255,255,255,0.9);
   font-weight: bold;
   font-size: 28px;
@@ -60,11 +77,6 @@ body {
   transition: width .3s;
 }
 
-.player-photo {
-  height: 250px;
-  background-size: cover;
-}
-
 .banner {
   background-image: linear-gradient(-225deg, rgba(0,101,168,0.8) 0%, rgba(0,36,61,0.7) 50%), url('../images/stadium.jpg');
   background-size: cover;
@@ -79,13 +91,31 @@ body {
   align-items: center;
 }
 
-.banner, h1 {
+.banner h1 {
   font-size: 4vw;
   font-weight: bold;
 }
 
+.what-we-do, .who-we-are, .contact {
+  margin: 60px 0;
+}
+
+.portfolio h2 {
+  margin-left: 102.5px;
+  margin-bottom: 0;
+}
+
+.player-photo {
+  height: 250px;
+  background-size: cover;
+}
+
 .players-section {
   padding: 50px;
+}
+
+.players-section button {
+  background-color: transparent
 }
 
 .player-card {
@@ -174,4 +204,144 @@ body {
 
 .slick-active button {
   color: #dfca70 !important;
+}
+
+.coordonates {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+}
+
+.coordonates a {
+  font-size: 22px;
+  color: rgba(0,0,0,0.6);
+  text-decoration: none;
+}
+
+.coordonates a:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: rgba(200,200,200,0.1);
+}
+
+.footer ul {
+  margin: 0;
+  padding: 30px 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul li a {
+  font-size: 26px;
+  color: rgba(0,0,0,0.6);
+  margin: 20px;
+  cursor: pointer;
+}
+
+.footer ul li a:hover {
+  color: rgba(0,0,0,1);
+}
+
+@media screen and (max-width: 800px) {
+  .banner h1 {
+    font-size: 8vw;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner h1 {
+    font-size: 10vw;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .players-section {
+    padding: 0;
+  };
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio h2 {
+    margin-left: 15px;
+  };
+}
+
+
+@media screen and (max-width: 500px) {
+  .coordonates {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+
+/* Dropdown */
+
+.custom-dropdown {
+  display: none;
+  width: max-content;
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  z-index: 99;
+  font-weight: lighter;
+  transition: all 1s;
+}
+
+.custom-dropdown ul {
+  background-color: rgba(255,255,255,0.9);
+}
+
+.custom-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.custom-dropdown i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#list-dropdown {
+  display: none;
+  list-style: none;
+  padding: 30px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+#icon-dropdown {
+  color: rgba(255,255,255,0.9);
+  font-size: 40px;
+  position: relative;
+  margin-right: 10px;
+  left: calc(100% - 35px);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+#icon-dropdown:hover {
+  color: rgba(255,255,255,1);
+}
+
+@media screen and (max-width: 800px) {
+  .custom-dropdown {
+    display: block;
+  };
+}
+
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  };
 }
