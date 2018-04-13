@@ -89,11 +89,12 @@ body {
 }
 
 .player-card {
-  height: 450px;
   padding: 15px;
-  margin: 20px 10px;
+  margin: 20px 30px;
   border-radius: 3px;
   box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  outline: none;
+  text-align: center;
 }
 
 .player-name {
@@ -107,10 +108,70 @@ body {
   font-size: 16px;
 }
 
+.player-club {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 .player-num {
   font-size: 50px;
   color: #dfca70;
   position: absolute;
   top: 30px;
   left: 50px;
+}
+
+.player-life {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-life p {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+.flags-container {
+  display: flex;
+  padding: 5px 10px;
+  margin: 5px 10px;
+}
+
+.flags {
+  width: 20px;
+  height: 100%;
+  margin-left: 5px;
+}
+
+.player-goals {
+  display: flex;
+  justify-content: center;
+}
+
+.player-goals img {
+  width: 20px;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.slick-dots {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+}
+
+.slick-dots li button {
+  border: none;
+  color: rgba(0,0,0,0.6);
+  outline: none;
+}
+
+.slick-active button {
+  color: #dfca70 !important;
 }

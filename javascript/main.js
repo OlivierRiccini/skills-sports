@@ -1,11 +1,11 @@
 class Player {
-  constructor(firstName, lastName, yearOfBirth, currentClub, position, nationality, num, goals, photo) {
+  constructor(firstName, lastName, yearOfBirth, currentClub, position, nationalities, num, goals, photo) {
     this._firstName = firstName,
     this._lastName = lastName,
     this._yearOfBirth= yearOfBirth,
     this._currentClub = currentClub,
     this._position = position,
-    this._nationality = nationality,
+    this._nationalities = nationalities,
     this._num = num,
     this._goals = goals,
     this._photo = photo
@@ -31,8 +31,8 @@ class Player {
     return this._position;
   }
 
-  get nationality() {
-    return this._nationality;
+  get nationalities() {
+    return this._nationalities;
   }
 
   get num() {
@@ -58,7 +58,7 @@ const YThuram = new Player(
   "1988",
   "Le Havre AC",
   "GKP",
-  "France",
+  [ "france" ],
   "20",
   0,
   "images/thuram.jpg"
@@ -72,7 +72,7 @@ const FRaspentino = new Player(
   "1989",
   "Kas Eupen",
   "FWD",
-  "France",
+  [ "france" ],
   "9",
   2,
   "images/raspentino.png"
@@ -86,7 +86,7 @@ const QBraat = new Player(
   "1997",
   "FC Nantes",
   "GKP",
-  "France",
+  [ "france" ],
   "",
   0,
   "images/braat.jpg"
@@ -100,7 +100,7 @@ const BMazikou = new Player(
   "1996",
   "USL Dunkerque",
   "DEF",
-  "France, Congo",
+  [ "france", "congo" ],
   "16",
   0,
   "images/mazikou.jpg"
@@ -114,7 +114,7 @@ const MZeffane = new Player(
   "1992",
   "Rennes",
   "DEF",
-  "France, Algeria",
+  [ "france", "algeria" ],
   "10",
   0,
   "images/zeffane.jpg"
@@ -128,7 +128,7 @@ const HElKarabri = new Player(
   "2000",
   "Anderlecht U19",
   "DEF",
-  "Belgium, Marocco",
+  [ "belgium", "morocco" ],
   "3",
   0,
   "images/el-karabri.png"
@@ -142,7 +142,7 @@ const SPrcić = new Player(
   "1993",
   "Rennes",
   "MID",
-  "France, Bosnia",
+  [ "france", "bosnia" ],
   "13",
   1,
   "images/prcic.jpg"
@@ -156,7 +156,7 @@ const FLajugie = new Player(
   "1996",
   "Limoges",
   "MID",
-  "France",
+  [ "france" ],
   "10",
   2,
   "images/lajugie.jpeg"
@@ -170,7 +170,7 @@ const EMassouema = new Player(
   "1997",
   "Dijon",
   "MID",
-  "France",
+  [ "france" ],
   "2",
   0,
   "images/massouema.jpg"
@@ -184,7 +184,7 @@ const TVialla = new Player(
   "1996",
   "Ajaccio",
   "FWD",
-  "France",
+  [ "france" ],
   "18",
   2,
   "images/vialla.jpg"
@@ -196,25 +196,73 @@ const playersSection = document.querySelector('.players-section');
 
 players.forEach(function(player){
   playersSection.insertAdjacentHTML('afterbegin',
-    `<div class="col-xs-12 col-sm-6 col-md-4">
+    `
       <div class="player-card">
         <div class="player-photo" style="background-image: url(${player.photo})">
           <span class="player-num">${player.num}</span>
         </div>
         <div class="player-info">
           <p class="player-name"><strong>${player.firstName[0].toUpperCase()}.${player.lastName.toUpperCase()}</strong></p>
-          <p>Year of birth: ${player.currentClub} - Nationality: ${player.position}</p>
-          <p>Year of birth: ${player.yearOfBirth} - Nationality: ${player.nationality}</p>
+          <p class="player-club">${player.currentClub} - ${player.position}</p>
+          <div class="player-life">
+            <p>${player.yearOfBirth}</p>
+            <div class="flags-container"></div>
+          </div>
         </div>
       </div>
-    </div>`);
+    `);
   if (player.goals != 0) {
     const playerInfo = document.querySelector('.player-info');
-    playerInfo.insertAdjacentHTML('beforeend', `<p>Goals: ${player.goals}</p>`);
+    playerInfo.insertAdjacentHTML('beforeend', `<div class="player-goals">${player.goals}<img src="images/soccer-ball.svg" alt="soccer-ball"/></div>`);
   }
+
+  const playerLife = document.querySelector('.flags-container');
+
+  player.nationalities.forEach(function(nationality){
+    playerLife.insertAdjacentHTML('afterbegin', `<img class="flags" src="flags/${nationality}.svg" alt="${nationality}-flag" />`);
+  });
 });
 
-// /* Carousel */
+/* Carousel */
+
+$('.players-section').slick({
+  arrows: false,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    }
+  ]
+});
+
+
+const dots = document.querySelectorAll('.slick-dots li button');
+
+dots.forEach(function(dot) {
+  dot.innerHTML = '<i class="fa fa-dot-circle-o" aria-hidden="true"></i>';
+});
 
 // /* Implement Slick function */
 // $('.slider').slick({
