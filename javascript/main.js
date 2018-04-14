@@ -439,7 +439,7 @@ const navItem = document.querySelectorAll('.navbar li a');
 window.addEventListener("scroll", navPosition);
 
 $('#icon-dropdown').click(function(){
-    $('#list-dropdown').fadeOut();
+  $('#list-dropdown').slideToggle();
 });
 
 /* loading page */
