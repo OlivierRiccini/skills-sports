@@ -22,31 +22,51 @@
 </head>
 <body>
 
+  <div class="loading-page">
+    <div class="loader">
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__bar"></div>
+      <div class="loader__ball"></div>
+    </div>
+  </div>
   <div class="navbar stroke">
     <ul class="navbar-left">
-      <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
     </ul>
     <ul id="myMenu" class="navbar-right">
-      <li><a class="cool-link" href="#what-we-do">WHAT WE DO</a></li>
-      <li><a class="cool-link" href="#portfolio">PORTFOLIO</a></li>
-      <li><a class="cool-link" href="#who-we-are">WHO WE ARE</a></li>
-      <li><a class="cool-link" href="#contact">CONTACT</a></li>
+      <div id="list-english-navbar">
+        <li><a class="cool-link" href="#what-we-do">WHAT WE DO</a></li>
+        <li><a class="cool-link" href="#portfolio">PORTFOLIO</a></li>
+        <li><a class="cool-link" href="#who-we-are">WHO WE ARE</a></li>
+        <li><a class="cool-link" href="#contact">CONTACT</a></li>
+      </div>
+      <li><a href="#" class="gb-flag"><img src="flags/gb.svg" alt="gb-flag" width="30"></a></li>
+      <li><a href="#" class="france-flag"><img src="flags/france.svg" alt="france-flag" width="30"></a></li>
     </ul>
   </div>
 
   <div class="custom-dropdown">
     <i class="fa fa-bars" id="icon-dropdown" style="font-size: 40px;"></i>
-    <ul id="list-dropdown">
-      <li><a href="#what-we-do">WHAT WE DO</a></li>
-      <li><a href="#portfolio">PORTFOLIO</a></li>
-      <li><a href="#who-we-are">WHO WE ARE</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+    <ul id="list-dropdown" class="list-dropdown">
+      <div id="list-english-dropdown">
+        <li><a href="#what-we-do">WHAT WE DO</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#who-we-are">WHO WE ARE</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </div>
+      <li><a href="#" class="gb-flag"><img src="flags/gb.svg" alt="gb-flag" width="30"></a></li>
+      <li><a href="#" class="france-flag"><img src="flags/france.svg" alt="france-flag" width="30"></a></li>
     </ul>
   </div>
 
     <div class="banner">
-      <h1>SKILLS SPORTS MANAGEMENT</h1>
+      <img src="images/logo.png" alt="logo" width="250">
     </div>
 
     <div class="what-we-do" id="what-we-do">
@@ -55,36 +75,32 @@
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
     </div>
-    <div class="portfolio" id="portfolio">
-      <h2>Our players</h2>
-      <div class="players-section"></div>
-    </div>
     <div class="who-we-are" id="who-we-are">
       <div class="container">
         <h2>Who we are</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
     </div>
-
+    <div class="portfolio" id="portfolio">
+      <h2>Our players</h2>
+      <div class="players-section"></div>
+    </div>
     <div class="contact" id="contact">
       <div class="container">
-        <h2>Contact Us</h2>
+        <h2>Contact</h2>
         <div class="coordonates">
           <a href="#"><i class="fa fa-envelope"></i> contact@skills-sports.com</a>
           <a href="#"><i class="fa fa-phone"></i> 0123232323</a>
         </div>
       </div>
     </div>
-
     <div class="footer">
       <ul>
-        <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
         <li><a href=""><i class="fa fa-instagram"></i></a></li>
+        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </div>
-
-  </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
