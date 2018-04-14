@@ -107,14 +107,12 @@ const englishFlags = document.querySelectorAll('.gb-flag');
 frenchFlags.forEach(function(flag) {
   flag.addEventListener('click', function() {
     languageChoice("french");
-    console.log(flag);
   })
 })
 
 englishFlags.forEach(function(flag) {
   flag.addEventListener('click', function() {
     languageChoice("english");
-    console.log(flag);
   })
 })
 
