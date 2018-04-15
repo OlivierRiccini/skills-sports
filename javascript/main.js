@@ -192,20 +192,6 @@ const YThuram = new Player(
 
 players.push(YThuram);
 
-const FRaspentino = new Player(
-  "Florian",
-  "Raspentino",
-  "1989",
-  "Kas Eupen",
-  "FWD",
-  [ "france" ],
-  "19",
-  2,
-  "images/raspentino.png",
-  "https://www.sofascore.com/fr/joueurs/florian-raspentino/101618"
-);
-
-players.push(FRaspentino);
 
 const QBraat = new Player(
   "Quentin",
@@ -222,20 +208,7 @@ const QBraat = new Player(
 
 players.push(QBraat);
 
-const BMazikou = new Player(
-  "Bradley",
-  "Mazikou",
-  "1996",
-  "USL Dunkerque",
-  "DEF",
-  [ "france", "congo" ],
-  "3",
-  0,
-  "images/mazikou.jpg",
-  "#"
-);
 
-players.push(BMazikou);
 
 const MZeffane = new Player(
   "Mehdi",
@@ -252,6 +225,22 @@ const MZeffane = new Player(
 
 players.push(MZeffane);
 
+const BMazikou = new Player(
+  "Bradley",
+  "Mazikou",
+  "1996",
+  "USL Dunkerque",
+  "DEF",
+  [ "france", "congo" ],
+  "3",
+  0,
+  "images/mazikou.jpg",
+  "#"
+);
+
+players.push(BMazikou);
+
+
 const HElKarabri = new Player(
   "H",
   "El Karabri",
@@ -259,9 +248,9 @@ const HElKarabri = new Player(
   "Anderlecht U19",
   "DEF",
   [ "belgium", "morocco" ],
-  "3",
+  "4",
   0,
-  "images/el-karabri.png",
+  "images/el-karabri.jpg",
   "#"
 );
 
@@ -282,21 +271,6 @@ const SPrcić = new Player(
 
 players.push(SPrcić);
 
-const FLajugie = new Player(
-  "François",
-  "Lajugie",
-  "1996",
-  "Limoges",
-  "MID",
-  [ "france" ],
-  "8",
-  2,
-  "images/lajugie.jpeg",
-  "#"
-);
-
-players.push(FLajugie);
-
 const EMassouema = new Player(
   "Eden",
   "Massouema",
@@ -311,6 +285,36 @@ const EMassouema = new Player(
 );
 
 players.push(EMassouema);
+
+const FRaspentino = new Player(
+  "Florian",
+  "Raspentino",
+  "1989",
+  "Kas Eupen",
+  "FWD",
+  [ "france" ],
+  "19",
+  2,
+  "images/raspentino.png",
+  "https://www.sofascore.com/fr/joueurs/florian-raspentino/101618"
+);
+
+players.push(FRaspentino);
+
+const FLajugie = new Player(
+  "François",
+  "Lajugie",
+  "1996",
+  "Limoges",
+  "MID",
+  [ "france" ],
+  "8",
+  2,
+  "images/lajugie.jpeg",
+  "#"
+);
+
+players.push(FLajugie);
 
 const TVialla = new Player(
   "Thibault",
