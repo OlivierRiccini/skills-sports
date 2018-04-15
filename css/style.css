@@ -113,7 +113,6 @@ h2 {
 }
 
 .portfolio h2 {
-  margin-left: 102.5px;
   margin-bottom: 0;
 }
 
@@ -306,12 +305,6 @@ h2 {
     font-size: 8vw;
     font-weight: bold;
   }
-}
-
-@media screen and (max-width: 800px) {
-  .portfolio h2 {
-    margin-left: 15px;
-  };
 }
 
 @media screen and (max-width: 500px) {
