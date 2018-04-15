@@ -104,6 +104,35 @@ h2 {
   font-weight: bold;
 }
 
+#logo-banner {
+  width: 35vw;
+}
+
+
+@media screen and (max-width: 1000px) {
+  #logo-banner {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #logo-banner {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #logo-banner {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #logo-banner {
+    width: 70vw;
+  }
+}
+
 .logo-small-screen {
   display: none;
 }
