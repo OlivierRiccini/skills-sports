@@ -184,7 +184,7 @@ const YThuram = new Player(
   "Le Havre AC",
   "GKP",
   [ "france" ],
-  "20",
+  "16",
   0,
   "images/thuram.jpg",
   "#"
@@ -199,7 +199,7 @@ const FRaspentino = new Player(
   "Kas Eupen",
   "FWD",
   [ "france" ],
-  "9",
+  "19",
   2,
   "images/raspentino.png",
   "https://www.sofascore.com/fr/joueurs/florian-raspentino/101618"
@@ -214,7 +214,7 @@ const QBraat = new Player(
   "FC Nantes",
   "GKP",
   [ "france" ],
-  "",
+  "40",
   0,
   "images/braat.jpg",
   "#"
@@ -229,7 +229,7 @@ const BMazikou = new Player(
   "USL Dunkerque",
   "DEF",
   [ "france", "congo" ],
-  "16",
+  "3",
   0,
   "images/mazikou.jpg",
   "#"
@@ -244,7 +244,7 @@ const MZeffane = new Player(
   "Rennes",
   "DEF",
   [ "france", "algeria" ],
-  "10",
+  "2",
   0,
   "images/zeffane.jpg",
   "#"
@@ -274,7 +274,7 @@ const SPrcić = new Player(
   "Rennes",
   "MID",
   [ "france", "bosnia" ],
-  "13",
+  "10",
   1,
   "images/prcic.jpg",
   "#"
@@ -289,7 +289,7 @@ const FLajugie = new Player(
   "Limoges",
   "MID",
   [ "france" ],
-  "10",
+  "8",
   2,
   "images/lajugie.jpeg",
   "#"
@@ -304,7 +304,7 @@ const EMassouema = new Player(
   "Dijon",
   "MID",
   [ "france" ],
-  "2",
+  "21",
   0,
   "images/massouema.jpg",
   "#"
