@@ -250,7 +250,7 @@ const HElKarabri = new Player(
   [ "belgium", "morocco" ],
   "4",
   0,
-  "images/el-karabri.jpg",
+  "images/el-Karabri.jpg",
   "#"
 );
 
