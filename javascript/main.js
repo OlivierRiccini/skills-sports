@@ -18,8 +18,8 @@ function languageChoice(language) {
                                 <li><a href="#portfolio">PORTFOLIO</a></li>
                                 <li><a href="#contact">CONTACT</a></li>`;
 
-    whatWeDo.innerHTML = `<div class="row">
-                            <h2>What we do</h2>
+    whatWeDo.innerHTML = `<h2>What we do</h2>
+                          <div class="row">
                             <div class="col-xs-12 col-sm-6">
                               <div class="box">
                                 <h4><img src="images/soccer-ball.svg" alt="icon-soccer-ball" width="30">
