@@ -103,8 +103,8 @@ function languageChoice(language) {
                                 <li><a href="#portfolio">PORTFOLIO</a></li>
                                 <li><a href="#contact">CONTACT</a></li>`;
 
-    whatWeDo.innerHTML = `<div class="row">
-                            <h2>Notre rôle</h2>
+    whatWeDo.innerHTML = `<h2>Notre rôle</h2>
+                          <div class="row">
                             <div class="col-xs-12 col-sm-6">
                               <div class="box">
                                 <h4><img src="images/soccer-ball.svg" alt="icon-soccer-ball" width="30">&nbsp;&nbsp;
@@ -159,7 +159,7 @@ function languageChoice(language) {
                             <div class="col-xs-12 col-sm-6">
                               <div class="box">
                                 <h4><i class="fa fa-home" style="font-size: 30px"></i>&nbsp;&nbsp;
-                                La vie de tous les jours</h4>
+                                Vie quotidienne</h4>
                                 <p>Nous savons que les meilleures performances surviennent
                                 lorsque tout ce qui se passe hors du terrain est sous
                                 contrôle. 24 heures sur 24, 7 jours sur 7, 365 jours
