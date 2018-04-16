@@ -9,30 +9,53 @@ const contact = document.querySelector('.contact');
 function languageChoice(language) {
   if ( language === "english" ) {
     navbar.innerHTML = `<li><a class="cool-link" href="#what-we-do">WHAT WE DO</a></li>
-                        <li><a class="cool-link" href="#portfolio">PORTFOLIO</a></li>
                         <li><a class="cool-link" href="#who-we-are">WHO WE ARE</a></li>
+                        <li><a class="cool-link" href="#portfolio">PORTFOLIO</a></li>
                         <li><a class="cool-link" href="#contact">CONTACT</a></li>`;
 
     customDropdown.innerHTML = `<li><a href="#what-we-do">WHAT WE DO</a></li>
-                                <li><a href="#portfolio">PORTFOLIO</a></li>
                                 <li><a href="#who-we-are">WHO WE ARE</a></li>
-                                <li><a href="#contact">CONTACT</a></li>
-                                <li><a href="#">CONTACT</a></li>`;
+                                <li><a href="#portfolio">PORTFOLIO</a></li>
+                                <li><a href="#contact">CONTACT</a></li>`;
 
     whatWeDo.innerHTML = `<div class="container">
                             <h2>What we do</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of
-                            Lorem Ipsum.</p>
+                            <br>
+                            <h4><img src="images/soccer-ball.svg" alt="icon-soccer-ball" width="30">
+                            &nbsp;&nbsp;Carrer builder
+                            </h4>
+                            <p>We ensure that our clients find the right clubs
+                              to help them develop both professionally and personally.
+                              We take great pride in securing the right deals for
+                              our athletes. Contract negotiation is our speciality.</p>
+                            <br>
+                            <h4><img src="images/jersey.svg" alt="icon-soccer-jersey" width="30">
+                            &nbsp;&nbsp;Sponsors and Marketing
+                            </h4>
+                            <p>Our team has great contacts across major brands
+                            to help our athletes secure endorsement and sponsorship
+                            deals, as well as become ambassadors for the causes
+                            that they believe in.</p>
+                            <br>
+                            <h4><i class="fa fa-desktop" style="font-size: 30px"></i>&nbsp;&nbsp;
+                            Communication and branding</h4>
+                            <p>Our Media experts work with our athletes to ensure
+                            that they make the most out of their brand by building
+                            a strong media presence to ensure their true personalities
+                            shine through.</p>
+                            <br>
+                            <h4><span style="font-size: 30px; font-weight: bold;">$</span>&nbsp;&nbsp;
+                            Financial Advisory</h4>
+                            <p>Our partnership with the bests accounting firms ensures
+                            our clients receive the correct advice and planning for
+                            their financial futures.</p>
+                            <br>
+                            <h4><i class="fa fa-home" style="font-size: 30px"></i>
+                            &nbsp;&nbsp;Lifestyle Assistance</h4>
+                            <p>We know that an athlete’s best performances come
+                            when everything off-the-field is taken care of so we
+                            offer advice and assistance on troublesome issues like
+                            moving house or tax optimization.</p>
                           </div>`;
 
 
@@ -52,51 +75,94 @@ function languageChoice(language) {
                             Lorem Ipsum.</p>
                           </div>`;
 
-    portfolio.innerText = `OUR PLAYERS`
+    portfolio.innerText = `Our players`
 
   } else if ( language === "french" ) {
-    navbar.innerHTML = `<li><a class="cool-link" href="#what-we-do">NOTRE METIER</a></li>
+    navbar.innerHTML = `<li><a class="cool-link" href="#what-we-do">NOTRE RÔLE</a></li>
+                        <li><a class="cool-link" href="#who-we-are">QUI SOMMES NOUS</a></li>
                         <li><a class="cool-link" href="#portfolio">PORTFOLIO</a></li>
-                        <li><a class="cool-link" href="#who-we-are">QUI NOUS SOMMES</a></li>
                         <li><a class="cool-link" href="#contact">CONTACT</a></li>`;
 
-    customDropdown.innerHTML = `<li><a href="#what-we-do">NOTRE METIER</a></li>
+    customDropdown.innerHTML = `<li><a href="#what-we-do">NOTRE RÔLE</a></li>
+                                <li><a href="#who-we-are">QUI SOMMES NOUS</a></li>
                                 <li><a href="#portfolio">PORTFOLIO</a></li>
-                                <li><a href="#who-we-are">QUI NOUS SOMMES</a></li>
-                                <li><a href="#contact">CONTACT</a></li>
-                                <li><a href="#">CONTACT</a></li>`;
+                                <li><a href="#contact">CONTACT</a></li>`;
 
     whatWeDo.innerHTML = `<div class="container">
-                            <h2>NOTRE METIER</h2>
-                            <p>Lorem Ipsum en français is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum
-                            passages.</p>
+                            <h2>Notre rôle</h2>
+                            <br>
+                            <h4><img src="images/soccer-ball.svg" alt="icon-soccer-ball" width="30">&nbsp;&nbsp;
+                            Construction de carrière
+                            </h4>
+                            <p>Nos joueurs ne sont pas seulement des clients.
+                            Ils sont les membres essentiels d’une équipe à qui
+                            nous voulons offrir le meilleur.
+                            L’objectif de Skills Sports Management reste
+                            toujours le même, peu importe le client, son CV ou
+                            sa situation : nous travaillons chaque jour pour
+                            l’aider à progresser dans sa carrière. En négociant
+                            pour lui les meilleurs contrats, en anticipant ses
+                            projets d’avenir, en améliorant son image et en
+                            gérant sa communication. Car pour pouvoir se
+                            concentrer uniquement sur le terrain, un joueur se
+                            doit d’être accompagné.</p>
+                            <br>
+                            <h4><img src="images/jersey.svg" alt="icon-soccer-jersey" width="30">&nbsp;&nbsp;
+                            Marketing
+                            </h4>
+                            <p>Skills Sports Management possède un réseau
+                            d’équipementiers sportifs pour permettre à ses joueurs
+                            d’obtenir des partenariats et de conclure des contrats
+                            d’amabassadeurs afin de défendre les causes auxquels
+                            ils croient.</p>
+                            <br>
+                            <h4><i class="fa fa-desktop" style="font-size: 30px"></i>&nbsp;&nbsp;
+                            Communication et medias</h4>
+                            <p>Nos experts des medias accompagnent les joueurs pour
+                            optimiser leur image. Chaque joueur est une marque qu’il
+                            faut protéger, développer et faire briller, aussi bien
+                            dans les relations avec les journalistes que sur les
+                            réseaux sociaux.</p>
+                            <h4><span style="font-size: 30px; font-weight: bold;">$</span></i>&nbsp;&nbsp;
+                            Gestion du patrimoine</h4>
+                            <p>Notre partenariat avec un grand cabinet d’expertise
+                            comptable assure à nos joueurs de recevoir les meilleurs
+                            conseils afin de sécuriser et d’anticiper leur après carrière.</p>
+                            <br>
+                            <h4><i class="fa fa-home" style="font-size: 30px"></i>&nbsp;&nbsp;
+                            La vie de tous les jours</h4>
+                            <p>Nous savons que les meilleures performances surviennent
+                            lorsque tout ce qui se passe hors du terrain est sous
+                            contrôle. 24 heures sur 24, 7 jours sur 7, 365 jours
+                            par an, nous sommes toujours à votre écoute pour vous
+                            aider dans vos démarches. Parce qu’il n’y a pas de
+                            problème mais uniquement des solutions, notre service
+                            de conciergerie permet d’organiser un déménagement,
+                            d’acheter une nouvelle voiture ou encore de réserver
+                            des places pour les play-offs de NBA.</p>
                           </div>`;
 
     whoWeAre.innerHTML = `<div class="container">
-                            <h2>QUI NOUS SOMMES</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of
-                            Lorem Ipsum.</p>
+                            <h2>Qui sommes nous</h2>
+                            <p>Skills Sports Management est une société internationale
+                            de gestion de carrière sportive. Créée en 2014 par
+                            Anthony Perrin, agent licencié à la Fédération Française
+                            de Football, SSM a construit un vaste réseau de partenaires
+                            à travers le monde.</p>
+                            <br>
+                            <p>Se concentrant sur la représentation de footballeurs
+                            et d’entraîneurs professionnels, la société couvre tous
+                            les aspects pertinents pour la réussite des sportifs
+                            de haut niveau: suivi médical, gestion financière,
+                            conseil juridique et maîtrise de la communication.</p>
+                            <br>
+                            <p>Notre équipe est composée d'avocats, de fiscalistes,
+                            d'attachés de presse, de médecins, de préparateurs
+                            physiques et d'un nutritionniste. Tous unis pour gérer
+                            votre présent et bâtir votre avenir.</p>
                           </div>`
 
-    portfolio.innerText = `NOS JOUEURS`
+    portfolio.innerText = `Nos joueurs`
   }
 }
 
@@ -119,7 +185,7 @@ englishFlags.forEach(function(flag) {
 /* Class player */
 
 class Player {
-  constructor(firstName, lastName, yearOfBirth, currentClub, position, nationalities, num, goals, photo, sofascoreUrl) {
+  constructor(firstName, lastName, yearOfBirth, currentClub, position, nationalities, num, photo, sofascoreUrl) {
     this._firstName = firstName,
     this._lastName = lastName,
     this._yearOfBirth= yearOfBirth,
@@ -127,7 +193,6 @@ class Player {
     this._position = position,
     this._nationalities = nationalities,
     this._num = num,
-    this._goals = goals,
     this._photo = photo,
     this._sofascoreUrl = sofascoreUrl
   }
@@ -160,10 +225,6 @@ class Player {
     return this._num;
   }
 
-  get goals() {
-    return this._goals;
-  }
-
   get photo() {
     return this._photo;
   }
@@ -185,9 +246,8 @@ const YThuram = new Player(
   "GKP",
   [ "france" ],
   "16",
-  0,
   "images/thuram.jpg",
-  "#"
+  "https://www.sofascore.com/fr/joueurs/yohann-thuram/39049"
 );
 
 players.push(YThuram);
@@ -201,9 +261,8 @@ const QBraat = new Player(
   "GKP",
   [ "france" ],
   "40",
-  0,
   "images/braat.jpg",
-  "#"
+  "https://www.sofascore.com/fr/joueurs/quentin-braat/826568"
 );
 
 players.push(QBraat);
@@ -218,9 +277,8 @@ const MZeffane = new Player(
   "DEF",
   [ "france", "algeria" ],
   "2",
-  0,
   "images/zeffane.jpg",
-  "#"
+  "https://www.sofascore.com/fr/joueurs/mehdi-zeffane/217770"
 );
 
 players.push(MZeffane);
@@ -233,25 +291,23 @@ const BMazikou = new Player(
   "DEF",
   [ "france", "congo" ],
   "3",
-  0,
   "images/mazikou.jpg",
-  "#"
+  "https://www.sofascore.com/fr/joueurs/bradley-mazikou/840392"
 );
 
 players.push(BMazikou);
 
 
 const HElKarabri = new Player(
-  "H",
+  "Hotman",
   "El Karabri",
   "2000",
   "Anderlecht U19",
   "DEF",
   [ "belgium", "morocco" ],
   "4",
-  0,
   "images/el-Karabri.jpg",
-  "#"
+  "https://www.sofascore.com/fr/joueurs/el-kababri-hotman/901896"
 );
 
 players.push(HElKarabri);
@@ -264,9 +320,8 @@ const SPrcić = new Player(
   "MID",
   [ "france", "bosnia" ],
   "10",
-  1,
   "images/prcic.jpg",
-  "#"
+  "https://www.sofascore.com/fr/joueurs/sanjin-prcic/94822"
 );
 
 players.push(SPrcić);
@@ -279,27 +334,12 @@ const EMassouema = new Player(
   "MID",
   [ "france" ],
   "21",
-  0,
   "images/massouema.jpg",
-  "#"
+  "https://www.sofascore.com/fr/joueurs/eden-massouema/846498"
 );
 
 players.push(EMassouema);
 
-const FRaspentino = new Player(
-  "Florian",
-  "Raspentino",
-  "1989",
-  "Kas Eupen",
-  "FWD",
-  [ "france" ],
-  "19",
-  2,
-  "images/raspentino.png",
-  "https://www.sofascore.com/fr/joueurs/florian-raspentino/101618"
-);
-
-players.push(FRaspentino);
 
 const FLajugie = new Player(
   "François",
@@ -309,12 +349,25 @@ const FLajugie = new Player(
   "MID",
   [ "france" ],
   "8",
-  2,
   "images/lajugie.jpeg",
   "#"
 );
 
 players.push(FLajugie);
+
+const FRaspentino = new Player(
+  "Florian",
+  "Raspentino",
+  "1989",
+  "Kas Eupen",
+  "FWD",
+  [ "france" ],
+  "19",
+  "images/raspentino.png",
+  "https://www.sofascore.com/fr/joueurs/florian-raspentino/101618"
+);
+
+players.push(FRaspentino);
 
 const TVialla = new Player(
   "Thibault",
@@ -324,9 +377,8 @@ const TVialla = new Player(
   "FWD",
   [ "france" ],
   "18",
-  2,
   "images/vialla.jpg",
-  "#"
+  "https://www.sofascore.com/fr/joueurs/thibault-vialla/792440"
 );
 
 players.push(TVialla);
@@ -354,10 +406,6 @@ players.forEach(function(player){
       </div>
     </a>
     `);
-  if (player.goals != 0) {
-    const playerInfo = document.querySelector('.player-info');
-    playerInfo.insertAdjacentHTML('beforeend', `<div class="player-goals">${player.goals}<img src="images/soccer-ball.svg" alt="soccer-ball"/></div>`);
-  }
 
   const playerLife = document.querySelector('.flags-container');
 
