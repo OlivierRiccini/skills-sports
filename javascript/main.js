@@ -18,49 +18,64 @@ function languageChoice(language) {
                                 <li><a href="#portfolio">PORTFOLIO</a></li>
                                 <li><a href="#contact">CONTACT</a></li>`;
 
-    whatWeDo.innerHTML = `<div class="container">
+    whatWeDo.innerHTML = `<div class="row">
                             <h2>What we do</h2>
-                            <br>
-                            <h4><img src="images/soccer-ball.svg" alt="icon-soccer-ball" width="30">
-                            &nbsp;&nbsp;Carrer builder
-                            </h4>
-                            <p>We ensure that our clients find the right clubs
-                              to help them develop both professionally and personally.
-                              We take great pride in securing the right deals for
-                              our athletes. Contract negotiation is our speciality.</p>
-                            <br>
-                            <h4><img src="images/jersey.svg" alt="icon-soccer-jersey" width="30">
-                            &nbsp;&nbsp;Sponsors and Marketing
-                            </h4>
-                            <p>Our team has great contacts across major brands
-                            to help our athletes secure endorsement and sponsorship
-                            deals, as well as become ambassadors for the causes
-                            that they believe in.</p>
-                            <br>
-                            <h4><i class="fa fa-desktop" style="font-size: 30px"></i>&nbsp;&nbsp;
-                            Communication and branding</h4>
-                            <p>Our Media experts work with our athletes to ensure
-                            that they make the most out of their brand by building
-                            a strong media presence to ensure their true personalities
-                            shine through.</p>
-                            <br>
-                            <h4><span style="font-size: 30px; font-weight: bold;">$</span>&nbsp;&nbsp;
-                            Financial Advisory</h4>
-                            <p>Our partnership with the bests accounting firms ensures
-                            our clients receive the correct advice and planning for
-                            their financial futures.</p>
-                            <br>
-                            <h4><i class="fa fa-home" style="font-size: 30px"></i>
-                            &nbsp;&nbsp;Lifestyle Assistance</h4>
-                            <p>We know that an athlete’s best performances come
-                            when everything off-the-field is taken care of so we
-                            offer advice and assistance on troublesome issues like
-                            moving house or tax optimization.</p>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><img src="images/soccer-ball.svg" alt="icon-soccer-ball" width="30">
+                                &nbsp;&nbsp;Carrer builder
+                                </h4>
+                                <p>We ensure that our clients find the right clubs
+                                  to help them develop both professionally and personally.
+                                  We take great pride in securing the right deals for
+                                  our athletes. Contract negotiation is our speciality.</p>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><img src="images/jersey.svg" alt="icon-soccer-jersey" width="30">
+                                &nbsp;&nbsp;Sponsors and Marketing
+                                </h4>
+                                <p>Our team has great contacts across major brands
+                                to help our athletes secure endorsement and sponsorship
+                                deals, as well as become ambassadors for the causes
+                                that they believe in.</p>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><i class="fa fa-desktop" style="font-size: 30px"></i>&nbsp;&nbsp;
+                                Communication and branding</h4>
+                                <p>Our Media experts work with our athletes to ensure
+                                that they make the most out of their brand by building
+                                a strong media presence to ensure their true personalities
+                                shine through.</p>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><span style="font-size: 30px; font-weight: bold;">$</span>&nbsp;&nbsp;
+                                Financial Advisory</h4>
+                                <p>Our partnership with the bests accounting firms ensures
+                                our clients receive the correct advice and planning for
+                                their financial futures.</p>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><i class="fa fa-home" style="font-size: 30px"></i>
+                                &nbsp;&nbsp;Lifestyle Assistance</h4>
+                                <p>We know that an athlete’s best performances come
+                                when everything off-the-field is taken care of so we
+                                offer advice and assistance on troublesome issues like
+                                moving house or tax optimization.</p>
+                              </div>
+                            </div>
                           </div>`;
 
 
-    whoWeAre.innerHTML = `<div class="container">
-                            <h2>What we do</h2>
+    whoWeAre.innerHTML = `<div class="row">
+                            <h2>Who we are</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing
                             and typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s,
@@ -88,62 +103,78 @@ function languageChoice(language) {
                                 <li><a href="#portfolio">PORTFOLIO</a></li>
                                 <li><a href="#contact">CONTACT</a></li>`;
 
-    whatWeDo.innerHTML = `<div class="container">
+    whatWeDo.innerHTML = `<div class="row">
                             <h2>Notre rôle</h2>
-                            <br>
-                            <h4><img src="images/soccer-ball.svg" alt="icon-soccer-ball" width="30">&nbsp;&nbsp;
-                            Construction de carrière
-                            </h4>
-                            <p>Nos joueurs ne sont pas seulement des clients.
-                            Ils sont les membres essentiels d’une équipe à qui
-                            nous voulons offrir le meilleur.
-                            L’objectif de Skills Sports Management reste
-                            toujours le même, peu importe le client, son CV ou
-                            sa situation : nous travaillons chaque jour pour
-                            l’aider à progresser dans sa carrière. En négociant
-                            pour lui les meilleurs contrats, en anticipant ses
-                            projets d’avenir, en améliorant son image et en
-                            gérant sa communication. Car pour pouvoir se
-                            concentrer uniquement sur le terrain, un joueur se
-                            doit d’être accompagné.</p>
-                            <br>
-                            <h4><img src="images/jersey.svg" alt="icon-soccer-jersey" width="30">&nbsp;&nbsp;
-                            Marketing
-                            </h4>
-                            <p>Skills Sports Management possède un réseau
-                            d’équipementiers sportifs pour permettre à ses joueurs
-                            d’obtenir des partenariats et de conclure des contrats
-                            d’amabassadeurs afin de défendre les causes auxquels
-                            ils croient.</p>
-                            <br>
-                            <h4><i class="fa fa-desktop" style="font-size: 30px"></i>&nbsp;&nbsp;
-                            Communication et medias</h4>
-                            <p>Nos experts des medias accompagnent les joueurs pour
-                            optimiser leur image. Chaque joueur est une marque qu’il
-                            faut protéger, développer et faire briller, aussi bien
-                            dans les relations avec les journalistes que sur les
-                            réseaux sociaux.</p>
-                            <h4><span style="font-size: 30px; font-weight: bold;">$</span></i>&nbsp;&nbsp;
-                            Gestion du patrimoine</h4>
-                            <p>Notre partenariat avec un grand cabinet d’expertise
-                            comptable assure à nos joueurs de recevoir les meilleurs
-                            conseils afin de sécuriser et d’anticiper leur après carrière.</p>
-                            <br>
-                            <h4><i class="fa fa-home" style="font-size: 30px"></i>&nbsp;&nbsp;
-                            La vie de tous les jours</h4>
-                            <p>Nous savons que les meilleures performances surviennent
-                            lorsque tout ce qui se passe hors du terrain est sous
-                            contrôle. 24 heures sur 24, 7 jours sur 7, 365 jours
-                            par an, nous sommes toujours à votre écoute pour vous
-                            aider dans vos démarches. Parce qu’il n’y a pas de
-                            problème mais uniquement des solutions, notre service
-                            de conciergerie permet d’organiser un déménagement,
-                            d’acheter une nouvelle voiture ou encore de réserver
-                            des places pour les play-offs de NBA.</p>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><img src="images/soccer-ball.svg" alt="icon-soccer-ball" width="30">&nbsp;&nbsp;
+                                Construction de carrière
+                                </h4>
+                                <p>Nos joueurs ne sont pas seulement des clients.
+                                Ils sont les membres essentiels d’une équipe à qui
+                                nous voulons offrir le meilleur.
+                                L’objectif de Skills Sports Management reste
+                                toujours le même, peu importe le client, son CV ou
+                                sa situation : nous travaillons chaque jour pour
+                                l’aider à progresser dans sa carrière. En négociant
+                                pour lui les meilleurs contrats, en anticipant ses
+                                projets d’avenir, en améliorant son image et en
+                                gérant sa communication. Car pour pouvoir se
+                                concentrer uniquement sur le terrain, un joueur se
+                                doit d’être accompagné.</p>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><img src="images/jersey.svg" alt="icon-soccer-jersey" width="30">&nbsp;&nbsp;
+                                Marketing
+                                </h4>
+                                <p>Skills Sports Management possède un réseau
+                                d’équipementiers sportifs pour permettre à ses joueurs
+                                d’obtenir des partenariats et de conclure des contrats
+                                d’amabassadeurs afin de défendre les causes auxquels
+                                ils croient.</p>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><i class="fa fa-desktop" style="font-size: 30px"></i>&nbsp;&nbsp;
+                                Communication et medias</h4>
+                                <p>Nos experts des medias accompagnent les joueurs pour
+                                optimiser leur image. Chaque joueur est une marque qu’il
+                                faut protéger, développer et faire briller, aussi bien
+                                dans les relations avec les journalistes que sur les
+                                réseaux sociaux.</p>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><span style="font-size: 30px; font-weight: bold;">$</span></i>&nbsp;&nbsp;
+                                Gestion du patrimoine</h4>
+                                <p>Notre partenariat avec un grand cabinet d’expertise
+                                comptable assure à nos joueurs de recevoir les meilleurs
+                                conseils afin de sécuriser et d’anticiper leur après carrière.</p>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <div class="box">
+                                <h4><i class="fa fa-home" style="font-size: 30px"></i>&nbsp;&nbsp;
+                                La vie de tous les jours</h4>
+                                <p>Nous savons que les meilleures performances surviennent
+                                lorsque tout ce qui se passe hors du terrain est sous
+                                contrôle. 24 heures sur 24, 7 jours sur 7, 365 jours
+                                par an, nous sommes toujours à votre écoute pour vous
+                                aider dans vos démarches. Parce qu’il n’y a pas de
+                                problème mais uniquement des solutions, notre service
+                                de conciergerie permet d’organiser un déménagement,
+                                d’acheter une nouvelle voiture ou encore de réserver
+                                des places pour les play-offs de NBA.</p>
+                              </div>
+                            </div>
                           </div>`;
 
-    whoWeAre.innerHTML = `<div class="container">
-                            <h2>Qui sommes nous</h2>
+    whoWeAre.innerHTML = `<h2>Qui sommes nous</h2>
+                          <div class="box">
                             <p>Skills Sports Management est une société internationale
                             de gestion de carrière sportive. Créée en 2014 par
                             Anthony Perrin, agent licencié à la Fédération Française
@@ -267,6 +298,19 @@ const QBraat = new Player(
 
 players.push(QBraat);
 
+const GChetaneau = new Player(
+  "Grégoire",
+  "Chetaneau",
+  "2000",
+  "FC Nantes",
+  "DEF",
+  [ "france" ],
+  "5",
+  "images/chetaneau.jpg",
+  "https://www.sofascore.com/player/gregoire-chetaneau/921359"
+);
+
+players.push(GChetaneau);
 
 
 const MZeffane = new Player(
@@ -311,6 +355,20 @@ const HElKarabri = new Player(
 );
 
 players.push(HElKarabri);
+
+const MThevenin = new Player(
+  "Mathis",
+  "Thevenin",
+  "2000",
+  "FC Nantes",
+  "MID",
+  [ "france" ],
+  "6",
+  "images/thevenin.jpg",
+  "https://www.transfermarkt.co.uk/mathis-thevenin/profil/spieler/475524"
+);
+
+players.push(MThevenin);
 
 const SPrcić = new Player(
   "Sanjin",
