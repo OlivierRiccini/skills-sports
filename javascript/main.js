@@ -74,20 +74,31 @@ function languageChoice(language) {
                           </div>`;
 
 
-    whoWeAre.innerHTML = `<div class="row">
-                            <h2>Who we are</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing
-                            and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and
-                            scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap
-                            into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the
-                            release of Letraset sheets containing Lorem Ipsum
-                            passages, and more recently with desktop publishing
-                            software like Aldus PageMaker including versions of
-                            Lorem Ipsum.</p>
+    whoWeAre.innerHTML = `<h2>Who we are</h2>
+                          <div class="box row-avatar">
+                            <div class="avatar-coloumn">
+                              <img class="avatar" src="images/anthony.jpg" alt="Anthony-Perrin">
+                            </div>
+                            <div class="intro-coloumn">
+                              <p>Skills Sports Management est une société internationale
+                              de gestion de carrière sportive. Créée en 2014 par
+                              Anthony Perrin, agent licencié à la Fédération Française
+                              de Football, SSM a construit un vaste réseau de partenaires
+                              à travers le monde.
+                              <br>
+                              <br>
+                              Se concentrant sur la représentation de footballeurs
+                              et d’entraîneurs professionnels, la société couvre tous
+                              les aspects pertinents pour la réussite des sportifs
+                              de haut niveau: suivi médical, gestion financière,
+                              conseil juridique et maîtrise de la communication.
+                              <br>
+                              <br>
+                              Notre équipe est composée d'avocats, de fiscalistes,
+                              d'attachés de presse, de médecins, de préparateurs
+                              physiques et d'un nutritionniste. Tous unis pour gérer
+                              votre présent et bâtir votre avenir.</p>
+                            </div>
                           </div>`;
 
     portfolio.innerText = `Our players`
@@ -174,23 +185,30 @@ function languageChoice(language) {
                           </div>`;
 
     whoWeAre.innerHTML = `<h2>Qui sommes nous</h2>
-                          <div class="box">
-                            <p>Skills Sports Management est une société internationale
-                            de gestion de carrière sportive. Créée en 2014 par
-                            Anthony Perrin, agent licencié à la Fédération Française
-                            de Football, SSM a construit un vaste réseau de partenaires
-                            à travers le monde.</p>
-                            <br>
-                            <p>Se concentrant sur la représentation de footballeurs
-                            et d’entraîneurs professionnels, la société couvre tous
-                            les aspects pertinents pour la réussite des sportifs
-                            de haut niveau: suivi médical, gestion financière,
-                            conseil juridique et maîtrise de la communication.</p>
-                            <br>
-                            <p>Notre équipe est composée d'avocats, de fiscalistes,
-                            d'attachés de presse, de médecins, de préparateurs
-                            physiques et d'un nutritionniste. Tous unis pour gérer
-                            votre présent et bâtir votre avenir.</p>
+                          <div class="box row row-avatar">
+                            <div class="col-xs-12 col-sm-2">
+                              <img class="avatar" src="images/anthony.jpg" alt="Anthony-Perrin">
+                            </div>
+                            <div class="col-xs-12 col-sm-10">
+                              <p>Skills Sports Management est une société internationale
+                              de gestion de carrière sportive. Créée en 2014 par
+                              Anthony Perrin, agent licencié à la Fédération Française
+                              de Football, SSM a construit un vaste réseau de partenaires
+                              à travers le monde.
+                              <br>
+                              <br>
+                              Se concentrant sur la représentation de footballeurs
+                              et d’entraîneurs professionnels, la société couvre tous
+                              les aspects pertinents pour la réussite des sportifs
+                              de haut niveau: suivi médical, gestion financière,
+                              conseil juridique et maîtrise de la communication.
+                              <br>
+                              <br>
+                              Notre équipe est composée d'avocats, de fiscalistes,
+                              d'attachés de presse, de médecins, de préparateurs
+                              physiques et d'un nutritionniste. Tous unis pour gérer
+                              votre présent et bâtir votre avenir.</p>
+                            </div>
                           </div>`
 
     portfolio.innerText = `Nos joueurs`
@@ -307,7 +325,7 @@ const GChetaneau = new Player(
   [ "france" ],
   "5",
   "images/chetaneau.jpg",
-  "https://www.sofascore.com/player/gregoire-chetaneau/921359"
+  "https://www.fff.fr/equipes-de-france/tous-les-joueurs/fiche-joueur/2543851057-gregoire-chetaneau"
 );
 
 players.push(GChetaneau);
@@ -365,7 +383,7 @@ const MThevenin = new Player(
   [ "france" ],
   "6",
   "images/thevenin.jpg",
-  "https://www.transfermarkt.co.uk/mathis-thevenin/profil/spieler/475524"
+  "https://www.fff.fr/equipes-de-france/tous-les-joueurs/fiche-joueur/2544049994-mathis-thevenin"
 );
 
 players.push(MThevenin);
