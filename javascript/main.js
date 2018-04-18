@@ -75,29 +75,26 @@ function languageChoice(language) {
 
 
     whoWeAre.innerHTML = `<h2>Who we are</h2>
-                          <div class="box row-avatar">
-                            <div class="avatar-coloumn">
+                          <div class="box row row-avatar">
+                            <div class="col-xs-12 col-sm-2">
                               <img class="avatar" src="images/anthony.jpg" alt="Anthony-Perrin">
                             </div>
-                            <div class="intro-coloumn">
-                              <p>Skills Sports Management est une société internationale
-                              de gestion de carrière sportive. Créée en 2014 par
-                              Anthony Perrin, agent licencié à la Fédération Française
-                              de Football, SSM a construit un vaste réseau de partenaires
-                              à travers le monde.
+                            <div class="col-xs-12 col-sm-10">
+                              <p>Skills Sports Management is an international sports
+                              career management company. Created in 2014 by Anthony Perrin,
+                              a licensed agent at the French Football Federation,
+                              SSM has built a vast network of partners around the world.
                               <br>
                               <br>
-                              Se concentrant sur la représentation de footballeurs
-                              et d’entraîneurs professionnels, la société couvre tous
-                              les aspects pertinents pour la réussite des sportifs
-                              de haut niveau: suivi médical, gestion financière,
-                              conseil juridique et maîtrise de la communication.
+                              Focusing on the representation of professional footballers
+                              and coaches, the company covers all aspects relevant to the
+                              success of top athletes: medical follow-up, financial management,
+                              legal advice and communication.
                               <br>
                               <br>
-                              Notre équipe est composée d'avocats, de fiscalistes,
-                              d'attachés de presse, de médecins, de préparateurs
-                              physiques et d'un nutritionniste. Tous unis pour gérer
-                              votre présent et bâtir votre avenir.</p>
+                              Our team is made up of lawyers, tax specialists,
+                              press officers, doctors, physical trainers and a nutritionist.
+                              All united to manage your present and build your future.</p>
                             </div>
                           </div>`;
 
@@ -320,7 +317,7 @@ const GChetaneau = new Player(
   "Grégoire",
   "Chetaneau",
   "2000",
-  "FC Nantes",
+  "Tour FC",
   "DEF",
   [ "france" ],
   "5",
