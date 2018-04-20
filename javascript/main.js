@@ -140,7 +140,7 @@ function languageChoice(language) {
                                 <p>Skills Sports Management possède un réseau
                                 d’équipementiers sportifs pour permettre à ses joueurs
                                 d’obtenir des partenariats et de conclure des contrats
-                                d’amabassadeurs afin de défendre les causes auxquels
+                                d’ambassadeurs afin de défendre les causes auxquels
                                 ils croient.</p>
                               </div>
                             </div>
@@ -316,8 +316,8 @@ players.push(QBraat);
 const GChetaneau = new Player(
   "Grégoire",
   "Chetaneau",
-  "2000",
-  "Tour FC",
+  "1999",
+  "Tours FC",
   "DEF",
   [ "france" ],
   "5",
@@ -536,14 +536,14 @@ const navBar = document.querySelector('.navbar');
 const customdropdown = document.getElementById('icon-dropdown');
 const navItem = document.querySelectorAll('.navbar li a');
   var rect = whatWeDo.getBoundingClientRect();
-  if ( rect.top < 140 ) {
+  if ( rect.top < 100 ) {
       navBar.style.backgroundColor = `rgba(255,255,255,0.95)`;
       customdropdown.style.color = `#0a4e80`;
       navItem.forEach(function(a) {
       a.style.color = `#0a4e80`;
     });
   }
-  if ( rect.top > 140 ) {
+  if ( rect.top > 100 ) {
     navBar.style.backgroundColor = `transparent`;
     navItem.forEach(function(a) {
       a.style.color = `rgba(255,255,255,0.9)`;
